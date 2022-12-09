@@ -1,1 +1,1 @@
-# rsschool-cv
+https://Dogadin.github.io/rsschool-cv/cv
