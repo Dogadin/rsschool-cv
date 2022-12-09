@@ -48,3 +48,15 @@ function longestSlideDown(pyramid) {
   return prev[0] > prev[1] ? prev[0] : prev[1]
 }
 ```
+### Education
+
++ **University:** Minsk Radio Engineering Institute, radio engineer
++ **Courses:**
+    + Udemy - JavaScript, React
+    + IT-Academy - Java Core, Java EE
+
+### Languages
+
++ English - Intermediate
++ Russian - Native
++ Belorussian - Native
