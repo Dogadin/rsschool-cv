@@ -87,17 +87,17 @@
             if (lengthPyr === 1) {
               return prev[0]
             }
-            for (let level = lengthPyr - 2; level &gt= 0; level--) {
+            for (let level = lengthPyr - 2; level &gt;= 0; level--) {
               const curr = pyramid[level]
               const currLength = curr.length
 
               for (let i = 0; i &lt; currLength; i++) {
                 const elem1 = curr[i] + prev[i]
                 const elem2 = curr[i] + prev[i + 1]
-                prev[i] = elem1 &gt elem2 ? elem1 : elem2
+                prev[i] = elem1 &gt; elem2 ? elem1 : elem2
               }
             }
-            return prev[0] &gt prev[1] ? prev[0] : prev[1]
+            return prev[0] &gt; prev[1] ? prev[0] : prev[1]
           }
             </code>
           </pre>
