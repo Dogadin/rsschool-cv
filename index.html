@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CV Alexander Dogadin</title>
+  <!--  <link href="/reset.css" rel="stylesheet"/>-->
+  <link href="/style.css" rel="stylesheet">
+</head>
+<body class="body">
+<header>
+  <div class="container">
+    <div class="header">
+      <figure>
+        <img alt="" src="/img/20170204_133218.jpg">
+      </figure>
+      <h1>Alexander Dogadin</h1>
+    </div>
+  </div>
+</header>
+<main>
+  <div class="container">
+    <aside class="left-column">
+      <section class="section">
+        <h2>Contacts</h2>
+        <address class="wrapper-section">
+          <p>Phone: (+375 29) 750-75-41</p>
+          <p>E-mail: AlexanderDogadin.7.0@gmail.com</p>
+          <p>
+            <span>GitHub:</span>
+            <a href="https://Dogadin.github.io/rsschool-cv/cv">Dogadin</a>
+          </p>
+        </address>
+      </section>
+      <section class="section">
+        <h2>Skills</h2>
+        <ul class="wrapper-section">
+          <li>HCL Domino, Notes</li>
+          <li>Lotus Script, @Formula</li>
+          <li>Java, Java EE, Spring Framework, JDBC, JUnit, JSP</li>
+          <li>SQL</li>
+          <li>Git, GitHub, GitLab</li>
+          <li>Docker</li>
+          <li>JavaScript (Basic), React</li>
+          <li>SQL</li>
+          <li>IntelliJ Idea, WebStorm, VS Code</li>
+        </ul>
+      </section>
+      <section class="section">
+        <h2>Education</h2>
+        <ul class="wrapper-section">
+          <li>University: Minsk Radio Engineering Institute, radio engineer</li>
+          <li>Courses:</li>
+          <li>Udemy - JavaScript, React</li>
+          <li>IT-Academy - Java Core, Java EE</li>
+        </ul>
+      </section>
+      <section class="section">
+        <h2>Languages</h2>
+        <ul class="wrapper-section">
+          <li>English - Intermediate</li>
+          <li>Russian - Native</li>
+          <li>Belorussian - Native</li>
+        </ul>
+      </section>
+    </aside>
+    <aside class="right-column">
+      <section class="section">
+        <h2>About Me</h2>
+        <p class="wrapper-section">
+          "I started my career as a radio engineer.
+          But quickly became involved in programming. Since 2003 I have been a Lotus Domino developer.
+          Now there is a desire to learn new technologies. So I decided to learn Java and JavaScript.
+          It will be great if I can put my new knowledge into practice."
+        </p>
+      </section>
+      <section class="section">
+        <h2>Code Example</h2>
+        <div class="wrapper-section">
+          <p>KATA from CodeWars: Pyramid Slide Down</p>
+          <p>Write a function longestSlideDown that takes a pyramid representation as argument and returns its largest
+            'slide down'</p>
+          <pre>
+            <code>
+          function longestSlideDown(pyramid) {
+            const lengthPyr = pyramid.length
+            let prev = pyramid[lengthPyr - 1]
+            if (lengthPyr === 1) {
+              return prev[0]
+            }
+            for (let level = lengthPyr - 2; level >= 0; level--) {
+              const curr = pyramid[level]
+              const currLength = curr.length
+
+              for (let i = 0; i &lt; currLength; i++) {
+                const elem1 = curr[i] + prev[i]
+                const elem2 = curr[i] + prev[i + 1]
+                prev[i] = elem1 > elem2 ? elem1 : elem2
+              }
+            }
+            return prev[0] > prev[1] ? prev[0] : prev[1]
+          }
+            </code>
+          </pre>
+        </div>
+      </section>
+    </aside>
+  </div>
+</main>
+<footer>
+  <div class="container">
+    <div class="footer">
+      <a href="https://rs.school/js/">
+        <div class="wrap-logo">
+          <img alt="" src="img/rs_school_js.svg">
+        </div>
+      </a>
+      <span>2021</span>
+      <a href="https://github.com/Dogadin">Dogadin</a>
+    </div>
+  </div>
+</footer>
+<!--</div>-->
+</body>
+</html>
